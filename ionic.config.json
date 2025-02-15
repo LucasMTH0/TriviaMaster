@@ -1,0 +1,7 @@
+{
+  "name": "TriviaMaster",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
