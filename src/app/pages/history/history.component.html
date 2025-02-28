@@ -1,0 +1,18 @@
+<ion-content>
+  @if(historyList.length > 0) {
+    <h1 class="title">Últimos placares</h1>
+    @for(history of historyList; track history) {
+      <div class="history-item">
+        <span>{{ formatDate(history.saveAt) }}</span>
+        <span><b>Perguntas:</b> {{ history.questionsLength }}</span>
+        <span><b>Acertos:</b> {{ history.answers.correct }}</span>
+        <span><b>Erros:</b> {{ history.answers.incorrect }}</span>
+      </div>
+    }
+  } @else {
+    <div class="empty-history">
+      <h1 class="title-empty">Nenhum resultado encontrado.</h1>
+      <button class="cartoon-button" (click)="router.navigateByUrl('/')">Voltar</button>
+    </div>
+  }
+</ion-content>

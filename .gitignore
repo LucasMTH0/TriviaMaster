@@ -8,11 +8,11 @@
 *.tmp.*
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
-
+/android
 *.log
 log.txt
 
-
+/.vscode
 /.sourcemaps
 /.versions
 /coverage

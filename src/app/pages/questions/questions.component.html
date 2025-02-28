@@ -1,0 +1,33 @@
+@if(questions){
+    <ion-content [fullscreen]="true">
+        <div class="logo-container">
+            <img 
+                src="../../../assets/logo.png" 
+                height="60" 
+                width="60" 
+                alt="Logo"
+            />
+        </div>
+        @if(currentQuestion < questions.length){
+            <div class="wrapper">
+                <h1 class="title">Question {{ currentQuestion + 1 }}</h1>
+                @if(questions && currentQuestion < questions.length) {
+                    <app-question
+                    [isConfirmedAnswer]="confirmedAnswer"
+                    (callNextQuestion)="nextQuestion()" 
+                    [question]="questions[currentQuestion]" 
+                    (emitterCurrentAnswer)="saveAnswer($event)"
+                    ></app-question>
+                }
+            </div>
+            <div class="wrapper">
+                <button class="cartoon-button confirm" (click)="checkAnswer()" [disabled]="!currentAnswer">
+                    confirm
+                </button>
+            </div>
+        } @else {
+            <app-finish-page [answers]="answers" [questionsLength]="questions.length"></app-finish-page>
+        }
+    </ion-content>
+    
+}

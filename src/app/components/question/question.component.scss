@@ -1,0 +1,52 @@
+.cartoon-answer-button {
+    /* Cores vibrantes */
+    background-color: #ffd166; /* Cor de fundo (amarelo-alaranjado) */
+    color: #000; /* Cor do texto */
+    border: 4px solid #000; /* Borda grossa e escura */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte cartunizada */
+    text-align: center; /* Texto centralizado */
+    cursor: pointer; /* Cursor de ponteiro */
+    box-shadow: 5px 5px 0px #000; /* Sombra exagerada */
+    transition: all 0.2s ease; /* Transição suave para efeitos de hover */
+    margin-block: 10px; /* Margem entre os botões */
+    width: 100%; /* Largura total */
+    max-width: 300px; /* Largura máxima */
+}
+
+/* Efeito de hover */
+.cartoon-answer-button:hover {
+    background-color: #ffbb00; /* Mudança de cor ao passar o mouse */
+    box-shadow: 3px 3px 0px #000; /* Sombra menor ao passar o mouse */
+    transform: translateY(2px); /* Efeito de "afundar" o botão */
+}
+
+.subtitle {
+    color: black;
+    font-weight: bold;
+}
+
+/* Efeito de clique */
+.active {
+    background-color: #e6a800; /* Cor ao clicar */
+    box-shadow: 1px 1px 0px #000; /* Sombra menor ao clicar */
+    transform: translateY(4px); /* Efeito de "pressionar" o botão */
+}
+
+.correct {
+    background-color: var(--atlantis-500);
+}
+
+.wrong {
+    background-color: var(--old-brick-500);
+}
+
+/* Efeito quando o botão está selecionado (opcional) */
+.cartoon-answer-button.selected {
+    background-color: #06d6a0; /* Cor de destaque para seleção */
+    color: #fff; /* Texto branco */
+    border-color: #000; /* Mantém a borda escura */
+}

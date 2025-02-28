@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <h1>Perguntas finalizadas!</h1>
+  <h1>
+    <b>Total de perguntas:</b> {{ questionsLength }}
+  </h1>
+  <h1>
+    <b>Acertos:</b> {{ answers.correct }}
+  </h1>
+  <h1>
+    <b>Erros:</b> {{ answers.incorrect }}
+  </h1>
+  <button 
+    class="cartoon-button"
+    (click)="router.navigateByUrl('/')"
+  > VOLTAR </button>
+</div>

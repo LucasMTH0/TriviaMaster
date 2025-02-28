@@ -1,0 +1,32 @@
+.history-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block: 1rem;
+    span {
+        color: black;
+    }
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    color: black;
+}
+
+.empty-history {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+    }
+}
+
+.cartoon-button {
+    margin: 20px auto;
+}

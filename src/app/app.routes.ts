@@ -3,15 +3,19 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+    loadComponent: () => import('./pages/home/home.page').then((m) => m.HomePage),
+  },
+  {
+    path: 'select-category',
+    loadComponent: () => import('./pages/select-category/select-category.component').then( m => m.SelectCategoryComponent)
   },
   {
     path: 'questions',
-    loadComponent: () => import('./questions/questions.component').then( m => m.QuestionsComponent)
+    loadComponent: () => import('./pages/questions/questions.component').then( m => m.QuestionsComponent)
   },
   {
     path: 'history',
-    loadComponent: () => import('./history/history.component').then( m => m.HistoryComponent)
+    loadComponent: () => import('./pages/history/history.component').then( m => m.HistoryComponent)
   },
   {
     path: '',

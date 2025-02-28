@@ -3,5 +3,9 @@
   "integrations": {
     "capacitor": {}
   },
+  "proxies": [{
+    "path": "/api",
+    "proxyUrl": "https://opentdb.com"
+  }],
   "type": "angular-standalone"
 }

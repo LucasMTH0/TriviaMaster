@@ -1,0 +1,10 @@
+<ion-content [fullscreen]="true">
+  <h1 class="title">Selecione uma categoria para começar!</h1>
+  <div class="container">
+    @for(category of categories; track category.id) {
+      <div class="cartoon-card" (click)="router.navigate(['/questions'], { queryParams: { categoryId: category.id } })">
+        {{filterTypeCategory(category.name)}}
+      </div>
+    }
+  </div>
+</ion-content>

@@ -1,0 +1,41 @@
+.wrapper{
+    padding: 2rem;
+}
+
+.container-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.subtitle {
+    font-size: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.confirm {
+    background-color: var(--atlantis-500);
+}
+
+.confirm:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.confirm:hover {
+    background-color: var(--atlantis-700);
+}
+

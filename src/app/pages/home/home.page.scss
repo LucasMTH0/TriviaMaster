@@ -1,0 +1,32 @@
+.container-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100dvh;
+  padding: 2rem;
+}
+
+.cartoon-answer-button {
+  background-color: var(--atlantis-500);
+  border: 4px solid #000;
+  border-radius: 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.2s ease;
+  margin-block: 10px;
+  width: 100%;
+  max-width: 300px;
+  
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.cartoon-answer-button:hover {
+  background-color: #ffbb00; 
+  box-shadow: 3px 3px 0px #000;
+  transform: translateY(2px);
+}

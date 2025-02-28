@@ -1,0 +1,17 @@
+
+<h2 class="subtitle" [innerHTML]="question.question"></h2>
+<div class="container-options">
+    @for(answer of question.shuffledAnswers; track answer) {
+        <button
+          [class.active]="currentAnswer === answer"
+          class="cartoon-answer-button"
+          [class.correct]="isConfirmedAnswer && answer == question.correct_answer	"
+          [class.wrong]="
+          isConfirmedAnswer && 
+          (currentAnswer === answer && currentAnswer !== question.correct_answer)"
+          (click)="setCurrentAnswer(answer)"
+          [innerHTML]="answer"
+        > </button>
+    }
+</div>
+<!-- currentAnswer === question.correctAnswer-->
